@@ -19,7 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppinsFonts.className} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${poppinsFonts.className} h-full antialiased bg-clear-off-white scroll-smooth`}
+    >
       <body className="min-h-full flex flex-col">
         <Layouts>{children}</Layouts>
       </body>
