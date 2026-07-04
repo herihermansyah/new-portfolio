@@ -20,7 +20,7 @@ const Header = () => {
             isOpen ? "translate-y-42" : "-translate-y-full",
             "transition-all duration-500 ease-in-out -z-10",
             "lg:static lg:z-10 lg:translate-y-0 lg:left-0 lg:translate-x-0 lg:py-0 lg:bg-transparent lg:w-fit",
-            "lg:transition-none"
+            "lg:transition-none",
           )}
         >
           <MenuNavigation className="flex-col gap-5 items-center lg:flex-row" />
