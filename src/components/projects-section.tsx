@@ -2,6 +2,8 @@ import React from "react";
 import Wrapper from "./wrapper";
 import Link from "next/link";
 import {IoIosArrowRoundForward} from "react-icons/io";
+import Image from "next/image";
+import {cn} from "@/lib/utils";
 
 const projectsData = [
   {
@@ -203,9 +205,9 @@ const projectsData = [
 const Projects = () => {
   return (
     <section id="projects" className="py-15">
-      <Wrapper>
+      <Wrapper className="flex flex-col gap-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-[18px] font-semibold text-charcoal-gray-100 capitalize">
+          <h2 className="text-[20px] font-semibold text-charcoal-gray-100 capitalize">
             Projects
           </h2>
           <Link
@@ -218,7 +220,55 @@ const Projects = () => {
             </span>
           </Link>
         </div>
-        <div></div>
+        <div>
+          <div className="grid grid-cols-4 gap-5">
+            {projectsData.map((item) => (
+              <div
+                key={item.id}
+                className={cn(
+                  "border border-charcoal-gray rounded-xl p-4 flex flex-col gap-2 items-center justify-center",
+                )}
+              >
+                <div
+                  className={cn(
+                    "overflow-hidden rounded-md w-50 h-50 bg-purple border-2 border-orange flex items-center justify-center",
+                    item.id % 2 === 0 && "bg-orange",
+                    "p-4"
+                  )}
+                >
+                  <Image
+                    src={item.thumbnail}
+                    alt={item.name}
+                    width={200}
+                    height={200}
+                    className="object-cover object-top rounded-md"
+                    priority
+                  />
+                </div>
+                <h3 className="text-[18px] text-charcoal-gray-100 line-clamp-1 font-semibold text-center">
+                  {item.name}
+                </h3>
+                <p className="text-[14px] text-charcoal-gray/50 line-clamp-3 text-center">
+                  {item.about}
+                </p>
+                <div className="flex items-center justify-between gap-5">
+                  <Link
+                    href={item.live}
+                    className="text-clear-off-white bg-purple rounded-md text-[10px] font-bold p-1.5 capitalize"
+                  >
+                    live demo
+                  </Link>
+                  <Link
+                    href={item.github}
+                    className="text-clear-off-white bg-orange rounded-md text-[10px] font-bold p-1.5 capitalize"
+                  >
+                    github
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </Wrapper>
     </section>
   );
