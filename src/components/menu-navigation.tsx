@@ -21,7 +21,7 @@ const MenuNavigation = ({className}: MenuNavigationProps) => {
           <li key={item.id}>
             <a
               href={item.link}
-              className="text-charcoal-gray-100 font-semibold text-[18px] lg:text-[20px]"
+              className="text-Dark-Maroon font-semibold text-[18px] lg:text-[20px]"
             >
               {item.name}
             </a>

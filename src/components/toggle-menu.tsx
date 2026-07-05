@@ -13,7 +13,7 @@ const ToggleMenu = forwardRef<HTMLButtonElement, ToggleMenuProps>(
         ref={ref}
         {...props}
         className={cn(
-          "text-[24px] text-clear-off-white bg-purple p-2 rounded-md",
+          "text-[24px] text-clear-off-white bg-Dark-Maroon p-2 rounded-md",
           "cursor-pointer active:scale-95 transition-all duration-100 ease-in-out",
           className,
         )}

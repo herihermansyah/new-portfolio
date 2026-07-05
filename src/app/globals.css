@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* color custon */
-  --color-orange: #f97300;
-  --color-purple: #32012f;
-  --color-charcoal-gray: #424242;
-  --color-charcoal-gray-100: #524c42;
-  --color-clear-off-white: #f5f5f5;
-  --color-cream: #e2dfd0;
   /* container custom */
   --container-main: 1240px;
+
+  /* shadow */
+  --shadow-brutal-Pale-Mint: 6px 6px 0px 0px #c1ebe9;
+  --shadow-brutal-Light-Yellow-Cream: 6px 6px 0px 0px #fff7c5;
+  --shadow-brutal-Orange-Mustard: 6px 6px 0px 0px #f4ae52;
+  --shadow-brutal-Dark-Maroon: 6px 6px 0px 0px #4f252e;
+
+  /* shadow dropdown */
+  --shadow-dropdown-Pale-Mint: 0px 6px 0px 0px #c1ebe9;
+  --shadow-dropdown-Light-Yellow-Cream: 0px 6px 0px 0px #fff7c5;
+  --shadow-dropdown-Orange-Mustard: 0px 6px 0px 0px #f4ae52;
+  --shadow-dropdown-Dark-Maroon: 0px 6px 0px 0px #4f252e;
+
+  /* color vintage neo brutalism */
+  --color-Pale-Mint: #c1ebe9;
+  --color-Light-Yellow-Cream: #fff7c5;
+  --color-Orange-Mustard: #f4ae52;
+  --color-Dark-Maroon: #4f252e;
+  --color-clear-off-white: #fbffe4;
 }

@@ -1,25 +1,29 @@
+"use client";
 import React from "react";
 import Wrapper from "./wrapper";
 import Image from "next/image";
+import {motion} from "motion/react";
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
+      initial={{opacity: 0, scale: 0}}
+      animate={{opacity: 1, scale: 1}}
       id="home"
-      className="py-15 bg-charcoal-gray bg-radial from-purple/60 to-purple/90"
+      className="py-20 bg-Light-Yellow-Cream"
     >
       <Wrapper className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center justify-between">
         <div className="flex flex-col gap-5 lg:w-200">
           <div className="flex flex-col gap-1">
-            <h1 className="flex flex-col text-orange/90 text-[36px] sm:text-[52px] leading-10 sm:leading-15 font-bold">
-              <span>Hello, I&apos;m</span>
+            <h1 className="flex flex-col text-Dark-Maroon text-[36px] sm:text-[52px] leading-10 sm:leading-15 font-bold">
+              <span className="text-[30px] leading-5">Hello, I&apos;m</span>
               <span>Heri Hermansyah</span>
             </h1>
-            <h2 className="text-orange/80 text-[22px] sm:text-[32px] font-semibold">
+            <h2 className="text-Dark-Maroon/80 text-[22px] sm:text-[32px] font-semibold">
               Frontend Web Developer
             </h2>
           </div>
-          <p className="text-cream/90">
+          <p className="text-Dark-Maroon/70">
             I specialize in building high-performance, SEO-friendly web
             applications using Next.js and Tailwind CSS. I don&apos;t just
             translate designs into code—I focus on writing clean, scalable
@@ -27,7 +31,7 @@ const Hero = () => {
             experiences that actually drive results.
           </p>
         </div>
-        <div className="overflow-hidden rounded-4xl">
+        <div className="overflow-hidden rounded-4xl shadow-brutal-Pale-Mint">
           <Image
             src={"/vector-hero.webp"}
             alt="me"
@@ -38,7 +42,7 @@ const Hero = () => {
           />
         </div>
       </Wrapper>
-    </section>
+    </motion.section>
   );
 };
 
