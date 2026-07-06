@@ -9,10 +9,10 @@ export const projectsData = [
       "Small shoe store with a good reputation (quality, elegant, polished), mainly targeting millennials.",
     tech: [
       {name: "NextJs"},
-      {id: 1.2, name: "Motion"},
-      {id: 1.3, name: "swiper"},
-      {id: 1.4, name: "tailwindCss"},
-      {id: 1.5, name: "typescript"},
+      {name: "Motion"},
+      {name: "swiper"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
     ],
   },
   {
@@ -25,11 +25,11 @@ export const projectsData = [
       "Movie Finder OMDB — a fast and responsive movie search app built with Next.js and TypeScript. Powered by OMDB API, TailwindCSS, Axios, and Framer Motion for smooth and interactive UI.",
     tech: [
       {name: "NextJs"},
-      {id: 1.2, name: "Motion"},
-      {id: 1.3, name: "axios"},
-      {id: 1.4, name: "tailwindCss"},
-      {id: 1.5, name: "typescript"},
-      {id: 1.6, name: "mui/material"},
+      {name: "Motion"},
+      {name: "axios"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
+      {name: "mui/material"},
     ],
   },
   {
@@ -42,9 +42,9 @@ export const projectsData = [
       "Next.js FakeStore E-Commerce A frontend practice project built with Next.js and DummyJSON. Includes product listing, product detail, cart page, and dummy checkout. Uses Tailwind, shadcn, Swiper, Axios, and Lucide icons to create a simple e-commerce experience.",
     tech: [
       {name: "NextJs"},
-      {id: 1.3, name: "axios"},
-      {id: 1.4, name: "tailwindCss"},
-      {id: 1.5, name: "typescript"},
+      {name: "axios"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
     ],
   },
   {
@@ -57,12 +57,12 @@ export const projectsData = [
       "next-analytics-dashboard is an analytics admin dashboard built with Next.js, TailwindCSS, Recharts, Axios, and Framer Motion. It delivers interactive data visualizations, smooth animations, and a fully responsive layout for a modern analytics experience.",
     tech: [
       {name: "NextJs"},
-      {id: 1.3, name: "axios"},
-      {id: 1.4, name: "tailwindCss"},
-      {id: 1.5, name: "typescript"},
-      {id: 1.5, name: "zod"},
-      {id: 1.6, name: "motion"},
-      {id: 1.7, name: "next-themes"},
+      {name: "axios"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
+      {name: "zod"},
+      {name: "motion"},
+      {name: "next-themes"},
     ],
   },
   {

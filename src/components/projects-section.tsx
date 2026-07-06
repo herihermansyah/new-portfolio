@@ -27,7 +27,7 @@ const Projects = () => {
             Projects
           </h2>
           <Link
-            href={"/projects"}
+            href={"/portfolio"}
             className="text-Dark-Maroon/80 font-semibold flex items-center gap-1 capitalize"
           >
             <span>See all projects</span>

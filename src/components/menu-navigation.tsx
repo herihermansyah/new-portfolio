@@ -1,12 +1,12 @@
 import React from "react";
 import {cn} from "@/lib/utils";
+import Link from "next/link";
 
 const menuData = [
-  {id: 1, name: "home", link: "#home"},
-  {id: 2, name: "projects", link: "#projects"},
-  {id: 3, name: "skills", link: "#skills"},
-  {id: 4, name: "service", link: "#service"},
-  {id: 5, name: "contact", link: "#contact"},
+  {id: 1, name: "projects", link: "#projects"},
+  {id: 2, name: "skills", link: "#skills"},
+  {id: 3, name: "service", link: "#service"},
+  {id: 4, name: "contact", link: "#contact"},
 ];
 
 interface MenuNavigationProps {
@@ -17,6 +17,12 @@ const MenuNavigation = ({className}: MenuNavigationProps) => {
   return (
     <nav aria-label="menu header">
       <ul className={cn("flex items-center gap-5 capitalize", className)}>
+        <Link
+          href="/"
+          className="text-Dark-Maroon font-semibold text-[18px] lg:text-[20px]"
+        >
+          home
+        </Link>
         {menuData.map((item) => (
           <li key={item.id}>
             <a
