@@ -3,6 +3,7 @@ import React from "react";
 import Wrapper from "./wrapper";
 import Image from "next/image";
 import {motion} from "motion/react";
+import {cn} from "@/lib/utils";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
       className="py-20 bg-Light-Yellow-Cream shadow-dropdown-Pale-Mint"
     >
       <Wrapper className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center justify-between">
-        <div className="flex flex-col gap-5 lg:w-200">
+        <div className="flex flex-col items-start gap-5 lg:w-200">
           <div className="flex flex-col gap-1">
             <h1 className="flex flex-col text-Dark-Maroon text-[36px] sm:text-[52px] leading-10 sm:leading-15 font-bold">
               <span className="text-[30px] leading-5">Hello, I&apos;m</span>
@@ -30,6 +31,16 @@ const Hero = () => {
             architecture and optimizing loading speeds to deliver seamless user
             experiences that actually drive results.
           </p>
+          <a
+            href="/cv.pdf"
+            download="CV_Herman.pdf"
+            className={cn(
+              "bg-Orange-Mustard text-clear-off-white font-semibold p-3 rounded-md",
+              "shadow-brutal-Dark-Maroon cursor-pointer active:scale-95 transition-all duration-500 ease-in-out",
+            )}
+          >
+            Download CV
+          </a>
         </div>
         <div className="overflow-hidden rounded-4xl shadow-brutal-Pale-Mint">
           <Image
