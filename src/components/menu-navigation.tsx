@@ -4,8 +4,8 @@ import {cn} from "@/lib/utils";
 const menuData = [
   {id: 1, name: "home", link: "#home"},
   {id: 2, name: "projects", link: "#projects"},
-  {id: 3, name: "service", link: "#service"},
-  {id: 4, name: "about", link: "#about"},
+  {id: 3, name: "skills", link: "#skills"},
+  {id: 4, name: "service", link: "#service"},
   {id: 5, name: "contact", link: "#contact"},
 ];
 

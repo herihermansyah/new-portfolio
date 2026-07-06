@@ -18,6 +18,7 @@ const SkillsSection = () => {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       className="py-15"
+      id="skills"
     >
       <Wrapper className="flex flex-col gap-6">
         <h2 className="text-[32px] font-extrabold text-Dark-Maroon capitalize text-center">

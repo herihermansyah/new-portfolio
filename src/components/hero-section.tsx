@@ -7,10 +7,10 @@ import {motion} from "motion/react";
 const Hero = () => {
   return (
     <motion.section
-      initial={{opacity: 0, scale: 0}}
-      animate={{opacity: 1, scale: 1}}
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
       id="home"
-      className="py-20 bg-Light-Yellow-Cream"
+      className="py-20 bg-Light-Yellow-Cream shadow-dropdown-Pale-Mint"
     >
       <Wrapper className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center justify-between">
         <div className="flex flex-col gap-5 lg:w-200">
