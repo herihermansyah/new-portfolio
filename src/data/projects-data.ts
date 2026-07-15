@@ -209,7 +209,7 @@ export const projectsData = [
     ],
   },
    {
-    id: 13,
+    id: 14,
     name: "Educational Courses Landing Page",
     live: "https://educational-courses-landing-page.vercel.app/",
     github: "https://github.com/herihermansyah/educational-courses-landing-page",
@@ -224,7 +224,24 @@ export const projectsData = [
       {name: "clsx"},
       {name: "motion"},
       {name: "swiper"},
-    {name: "class-variance-authority"},
+      {name: "class-variance-authority"},
+    ],
+  },
+   {
+    id: 15,
+    name: "components ui ready brutalism",
+    live: "https://components-ui-ready-brutalism.vercel.app/",
+    github: "https://github.com/herihermansyah/components-ui-ready-brutalism",
+    thumbnail: "/ui-brutal.png",
+    about:
+      "A premium collection of reusable, accessible, and highly customizable UI components built with Next.js, TypeScript, and CVA. Enhanced with clsx & tailwind-merge for seamless styling. Just copy, paste, and ship!",
+    tech: [
+      {name: "NextJs"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
+      {name: "tailwind-merge"},
+      {name: "clsx"},
+      {name: "class-variance-authority"},
     ],
   },
 ];
