@@ -208,4 +208,23 @@ export const projectsData = [
       {name: "swiper"},
     ],
   },
+   {
+    id: 13,
+    name: "Educational Courses Landing Page",
+    live: "https://educational-courses-landing-page.vercel.app/",
+    github: "https://github.com/herihermansyah/educational-courses-landing-page",
+    thumbnail: "/educ.png",
+    about:
+      "A modern, responsive, and visually stunning landing page for an educational platform, built using Next.js 16, React 19, and Tailwind CSS v4.",
+    tech: [
+      {name: "NextJs"},
+      {name: "tailwindCss"},
+      {name: "typescript"},
+      {name: "tailwind-merge"},
+      {name: "clsx"},
+      {name: "motion"},
+      {name: "swiper"},
+    {name: "class-variance-authority"},
+    ],
+  },
 ];
