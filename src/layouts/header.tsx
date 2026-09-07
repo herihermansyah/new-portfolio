@@ -2,21 +2,17 @@
 import Logo from "@/components/logo";
 import MenuNavigation from "@/components/menu-navigation";
 import ToggleMenu from "@/components/toggle-menu";
+import { WrapperMotion } from "@/components/ui/wrapper-motion";
 import Wrapper from "@/components/wrapper";
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import React from "react";
-import {HiMenuAlt3} from "react-icons/hi";
-import {MdOutlineCloseFullscreen} from "react-icons/md";
-import {motion} from "motion/react";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { MdOutlineCloseFullscreen } from "react-icons/md";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <motion.div
-      initial={{y: -100, opacity: 0}}
-      animate={{y: 0, opacity: 1}}
-      className="bg-Pale-Mint py-5 relative z-10 shadow-dropdown-Dark-Maroon"
-    >
+    <WrapperMotion className="bg-Pale-Mint py-5 relative z-10 shadow-dropdown-Dark-Maroon">
       <Wrapper className="flex items-center justify-between ">
         <Logo />
         <div
@@ -37,7 +33,7 @@ const Header = () => {
           {isOpen ? <MdOutlineCloseFullscreen /> : <HiMenuAlt3 />}
         </ToggleMenu>
       </Wrapper>
-    </motion.div>
+    </WrapperMotion>
   );
 };
 
