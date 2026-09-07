@@ -17,8 +17,8 @@ const wrapperMotion: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.3,
+      delayChildren: 0.1,
+      staggerChildren: 0.2,
       ease: "easeInOut",
     },
   },
@@ -73,7 +73,7 @@ const childMotion: Variants = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 100,
+      stiffness: 150,
     },
   },
 };
